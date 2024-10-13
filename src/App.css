@@ -1,0 +1,14 @@
+/* 全局样式 */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 其他样式可以从原来的style.css中迁移过来 */
