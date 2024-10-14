@@ -20,7 +20,7 @@ const headPhoto = require('../my-photos/headphoto.jpg');
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#4CAF50', // 保持绿色主题
+      main: '#4CAF50', 
     },
     background: {
       default: 'transparent',
@@ -44,13 +44,13 @@ const Home: React.FC = () => {
             <Grid item xs={12} md={4}>
               <Avatar
                 alt="Alan Xue"
-                src={headPhoto} // 使用导入的图片
+                src={headPhoto}
                 sx={{ 
                   width: 200, 
                   height: 200, 
                   mx: 'auto', 
                   boxShadow: 3,
-                  border: '3px solid #4CAF50' // 添加绿色边框
+                  border: '3px solid #4CAF50' 
                 }}
               />
             </Grid>
@@ -64,8 +64,8 @@ const Home: React.FC = () => {
                   color="primary" 
                   size="large"
                   startIcon={<DownloadIcon />}
-                  href="/src/resume/Yifan_Alan_Xue.pdf" 
-                  download
+                  href={process.env.PUBLIC_URL + '/Yifan_Alan_Xue.pdf'} 
+                  download="Yifan_Alan_Xue.pdf"
                   sx={{ 
                     py: 1, 
                     px: 2, 

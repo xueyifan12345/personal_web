@@ -29,7 +29,6 @@ const theme = createTheme({
   },
 });
 
-// 简历内容
 const resumeContent = `
 Name: Alan Xue
 Current Position: Software Developer at Sagent Lending
